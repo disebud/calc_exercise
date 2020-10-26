@@ -39,15 +39,17 @@ class MainActivity : AppCompatActivity()
     }
 
     private fun cek() : Boolean {
-        if(numbSatu.text.toString().isNotEmpty()){
+        if(numbSatu.text.toString().isNotEmpty() && numbDua.text.toString().isNotEmpty()){
           return  true
-        }
-
-        if(numbDua.text.toString().isNotEmpty()){
-            return  true
         } else {
             return false
         }
+
+//        if(numbDua.text.toString().isNotEmpty()){
+//            return  true
+//        } else {
+//            return false
+//        }
 
 
     }
@@ -73,8 +75,8 @@ class MainActivity : AppCompatActivity()
 
 //        resultText.text = hasil.toString()
 
-        Toast.makeText(this,"maka ${bilanganSatu.toString()} + ${bilanganDua.toString()} = ${hasil.toString()}",
-                Toast.LENGTH_SHORT).show()
+//        Toast.makeText(this,"maka ${bilanganSatu.toString()} + ${bilanganDua.toString()} = ${hasil.toString()}",
+//                Toast.LENGTH_SHORT).show()
     }
 
     private fun minus(){
